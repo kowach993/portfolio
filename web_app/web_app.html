@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./web_app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Web App</title>
+</head>
+<body>
+    <div id="app">
+        <form v-on:submit.prevent="addPeople">
+            <p>Name:</p>
+            <input v-model="currentPeoplesName" type="text" required>
+            <p>Last Name:</p>
+            <input v-model="currentPeoplesLastName" type="text" required>
+            <p>Date:</p>
+            <input v-model="currentPeoplesDate" type="date" required>
+            <p><button class="addbtn"type="submit">Add</button></p>
+        </form>
+        <div class="container-flex">
+            <p class="container">Full Name</p>
+            <p class="container">Date</p>
+            <p class="container-btn trash"><i class="fas fa-trash"></i></p>
+        </div>
+        <div class="container-flex">
+            <div><p class="container" v-for="(people, index) in peoples">{{people}}</p></div>
+            <div>
+                <p class="date-btn-flex" v-for="(date, index) in dates">
+                <span class="container">{{date}}</span>
+                <span class="container-btn"><button class="btn_x" v-on:click="deleteItem(index)">X</button></span>
+            </p>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./web_app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#slika_template {
+    width: 125px;
+    height: 125px; 
+    padding-left: 10px;
+}
+.heroj {
+    width: fit-content;
+    border: 2px solid royalblue;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #99E2FF;
+}
+
+.slika {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+

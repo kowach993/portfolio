@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./heroes.css">
+    <title>Heroes</title>
+</head>
+<body>
+    <p>Hero Name:<input id="ime_heroja" type="text"></p>
+    <p>
+        Hero Level:
+        <select id="level_heroja" name="lvl_heroja">
+            <option value="" checked>Pick...</option>
+            <option value="level 1">Level 1</option>
+            <option value="level 2">Level 2</option>
+            <option value="level 3">Level 3</option>
+            <option value="level 4">Level 4</option>
+            <option value="level 5">Level 5</option>
+            <option value="level 6">Level 6</option>
+            <option value="level 7">Level 7</option>
+            <option value="level 8">Level 8</option>
+            <option value="level 9">Level 9</option>
+            <option value="level 10">Level 10</option>
+        </select>
+    </p>
+    <p>Hero class: 
+        <select name="klasa heroja" id="klasa_heroja">
+            <option value="" checked>Pick...</option>
+            <option value="Druid">Druid</option>
+            <option value="Mage">Mage</option>
+            <option value="Warrior">Warrior</option>
+            <option value="Priest">Priest</option>
+            <option value="Support">Support</option>
+            <option value="Archer">Archer</option>
+            <option value="Strategist">Strategist</option>
+        </select>
+    </p>
+    <p>Hero Style:
+        <select id="stil">
+            <option value="" checked>Pick...</option>
+            <option value="./Heroes/hero 1.jpg">1</option>
+            <option value="./Heroes/hero 2.jpg">2</option>
+            <option value="./Heroes/hero 3.jpg">3</option>
+            <option value="./Heroes/hero 4.jpg">4</option>
+            <option value="./Heroes/hero 5.jpg">5</option>
+            <option value="./Heroes/hero 6.jpg">6</option>
+        </select>
+    </p>
+    <p><img class="slika" src="./Heroes/hero 1.jpg" alt="1"><img class="slika" src="./Heroes/hero 2.jpg" alt="2"><img class="slika" src="./Heroes/hero 3.jpg" alt="3"><img class="slika" src="./Heroes/hero 4.jpg" alt="4">
+        <img class="slika" src="./Heroes/hero 5.jpg" alt="5"><img class="slika" src="./Heroes/hero 6.jpg" alt="6"></p>
+    <p>Traits of a hero: 
+        <select name="osobine heroja" id="osobine_heroja">
+            <option value="" checked>Pick...</option>
+            <option value="Damage: 70; Armor: 45; HP: 420; Magic Resist: 35;">Damage:70, Armor:45, HP:420, Magic Resist:35</option>
+            <option value="Damage: 40; Armor: 75; HP: 720; Magic Resist: 50;">Damage:40, Armor:75, HP:720, Magic Resist:50</option>
+            <option value="Damage: 50; Armor: 65; HP: 620; Magic Resist: 45;">Damage:50, Armor:65, HP:620, Magic Resist:45</option>
+            <option value="Damage: 60; Armor: 55; HP: 520; Magic Resist: 40;">Damage:60, Armor:55, HP:520, Magic Resist:40</option>
+            <option value="Damage: 80; Armor: 35; HP: 320; Magic Resist: 30;">Damage:80, Armor:35, HP:320, Magic Resist:30</option>
+            <option value="Damage: 90; Armor: 25; HP: 320; Magic Resist: 25;">Damage:90, Armor:25, HP:320, Magic Resist:25</option>
+        </select>
+    </p>
+    <p><Button id="kreiraj">Create</Button></p>
+
+    <div id="prikazi"></div>
+
+    <template id="template-heroj">
+        <div class="heroj">
+            <div id="karakteristike_heroja">
+               <p><b>Hero Name:</b> {{ime_heroja}}</p>
+               <p></p><b>Hero Level:</b> {{level_heroja}}</p>
+               <p><b>Hero class:</b> {{klasa_heroja}}</p>
+               <p><b>Traits of a hero:</b><br/>{{osobine_heroja}}</p>
+            </div>
+            <div id="slika">
+                <img id="slika_template" src="{{stil_heroja}}" />
+            </div>
+        </div>
+    </template>
+
+    <script src="./heroes.js"></script>
+</body>
+</html>

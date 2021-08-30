@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragan Kovačević Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="nav-hero-container">
+        <div id="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex-lg justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                      <a class="nav-link" href="#section_one">About Me</a>
+                      <a class="nav-link" href="#section_two">Projects</a>
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav></div>
+        <div id="hero" data-aos="fade-right"
+        data-aos-duration="1700">
+            <h1 id="hero_title">Hi</h1>
+            <p id="hero_text"><b>My name is </b>
+            <b style="color: #c69c6d;">Dragan,</b> <br/><b> I'm a frontend programmer and my knowledge encompasses UX/UI design and Windows OS Administration. 
+                Beneath this page, you can see some projects that I have created.</b></p>
+            <a href="#section_two"><button data-aos="fade-right"
+              data-aos-duration="1700" id="projects_btn">Projects</button></a>
+        </div>
+    </div>
+    <main>
+        <section id="section_one">
+            <h1 id="section_one_title">About Me <img id="about_img" src="./images/me.jpg" alt=""></h1>
+            <div id="about_grid">
+                <div>
+                    <div id="about_info">
+                        <p><b>Name:<br/></b>Dragan Kovačević</p>
+                        <p><b>Birth:<br/> </b>21.12.1993</p>
+                        <p><b>Phone:<br/> </b>+381638655005</p>
+                        <p><b>E-Mail:<br/> </b>kowach93@gmail.com</p>
+                        <p>English <br/> <img src="./images/stars.jpg"></p>
+                        <p>HTML<br/> <img src="./images/stars.jpg"></p>
+                        <p>CSS<br/> <img src="./images/stars.jpg"></p>
+                        <p>JavaScript<br/> <img src="./images/stars2.jpg"></p>
+                        <p>UX/UI<br/> <img src="./images/stars2.jpg"></p>
+                        <p>CMS(Wordpress etc)<br/> <img src="./images/stars2.jpg"></p>
+                    </div>
+                    <h3 id="edu_title">Personal <br/> characteristics</h3>
+                    <p class="edu_text">
+                        - Communicative<br/>
+                        - Ready to participate in teamwork<br/>
+                        - Ready for further training<br/>
+                        - Ready to learn new jobs<br/>
+                        - Creative</p>                   
+                </div>
+                <div id="education">
+                    <h3 id="edu_title">Education</h3>
+                    <h5 class="edu_year">2020-2021</h5>
+                    <p class="edu_text">LINK Group Belgrade, Zemun <br/>
+                        ITAcademy certificate 
+                        - frontend javascript development <br/>
+                        Final Work - Rental Car website</p>                    
+                    <h5 class="edu_year">2012-2016</h5>                   
+                        <p class="edu_text">Educons University, Sremska Kamenica
+                            Faculty of ecological agriculture
+                            Bachelor with honours in agricultural engineering</p>                   
+                        <h5 class="edu_year">2008-2012</h5>                  
+                        <p class="edu_text">High school - "Agricultural-veterinary school with dormitory" Svilajnac " Svilajnac,
+                            Direction: Food Technician
+                           Diploma: Food Technician</p>
+                </div>
+                <div id="other">
+                    <h3 id="edu_title">Other notes</h3>
+                    <p class="edu_text">
+                        - Driving license in category B<br/>
+                        - Adequate knowledge of Windows operating system maintenance (installing a new operating system, installing various software)<br/>
+                        - A knowledge of computer hardware (assembly of computer components, knowledge of the roles of components in the computer, changing the paste on the processor, etc.)<br/>
+                        - Basic knowledge of adobe photoshop tools, figma, adobe XD,
+                          affinity photo</p>                    
+                </div>
+                <div id="exp">
+                    <h3 id="edu_title">Experience:</h3>
+                    <p class="edu_text">
+                        - ICC Balkans Svilajnac (maintainer of automatic and pneumatic machines for filling nail polishes, for vacuuming, for labeling, product packaging, filling in packing lists)<br/>
+                        - April 2020 - Founder of the company for providing it project management services, for creating and maintaining websites with cms tools.
+                    </p>             
+                </div>
+            </div>
+        </section>
+        <section id="section_two">
+            <h1 id="section_two_title">Projects</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card" data-aos-duration="1000" data-aos="fade-right">
+                    <div class="card-body">
+                      <h5 class="card-title">Final work, Rental car website</h5>
+                      <p class="card-text">Description: <br/>
+                      - Javascript for price check <br/>
+                      - Ajax used to read news from xml files <br/>
+                      - Gallery with jquery from fotorama.io <br/>
+                      - Contact page with google map implementation and contact form <br/>
+                      - Custom css with bootstrap 5 for design<br/>
+                      - Responsive design <br/>
+                      </p>
+                    </div>
+                    <a id="card_link" class="nav-link" target="_blank" href="./Zavrsni rad/index.html">Go full</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" data-aos-duration="1500" data-aos="fade-down">
+                    <div class="card-body">
+                      <h5 class="card-title">Martinovic Facility Services</h5>
+                      <p class="card-text">Description:<br/>
+                        - Configurated Hosting server on namecheap<br/>
+                        - Configurated domain on hosting server<br/>
+                        - Configurated E-Mail<br/>
+                        - Created website with cms namecheap builder<br/>
+                    </div>
+                    <a id="card_link" class="nav-link" target="_blank" href="https://martinovicfacilityservices.ch">Go full</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" data-aos-duration="2000" data-aos="fade-left">
+                    <div class="card-body">
+                      <h5 class="card-title">Hero design</h5>
+                      <p class="card-text">Description:<br/>
+                        - Bootstrap 5 <br/>
+                        - Responsive <br/>
+                        - Custom navigation menu mobile with bootstrap</p>
+                    </div>
+                    <a id="card_link" class="nav-link" target="_blank" href="./Website/index.html">Go full</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" data-aos-duration="2500" data-aos="fade-right">
+                    <div class="card-body">
+                      <h5 class="card-title">Vue Web App</h5>
+                      <p class="card-text">Description: <br/>
+                      - JavaScript Vue Framework<br/>
+                      - Adding people and remove people from list</p>
+                    </div>
+                    <a id="card_link" class="nav-link" target="_blank" href="./web_app/web_app.html">Go full</a>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" data-aos-duration="3000" data-aos="fade-up">
+                      <div id="Hero_App" class="card-body">
+                        <h5 class="card-title">Hero Template App</h5>
+                        <p class="card-text">Description: <br/>
+                        - Used Template with javascript to create hero
+                      </div>
+                      <a id="card_link" class="nav-link" target="_blank" href="./Test-main/heroes.html">Go full</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" data-aos-duration="3000" data-aos="fade-left">
+                      <div id="Hero_App" class="card-body">
+                        <h5 class="card-title">E-commercesol Website</h5>
+                        <p class="card-text">Description: <br/>
+                        - Website of my company <br/>
+                        - Html, CSS, Bootstrap 5, Contact form with PHP function
+                      </div>
+                      <a id="card_link" class="nav-link" target="_blank" href="https://www.e-commercesol.com">Go full</a>
+                    </div>
+                  </div>
+              </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <h1  id="hero_title">Contact me</h1>
+        <form class="contact__form" action="contact.php" method="POST">
+              <label class="label__title" for="name">Your Name</label>
+              <input class="footer_input" type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+              <label class="label__title" for="email">Your E-mail</label>
+              <input class="footer_input" type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+              <label class="label__title" for="title">Reason For Contacting Me</label>
+              <input class="footer_input" type="text" id="title" name="email_title" required placeholder="Title" pattern=[A-Za-z0-9\s]{8,60}>
+              <label class="label__title" for="message">Write your message</label>
+              <textarea class="footer_input" id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+            <button class="form__button" type="submit">Send Message</button>
+          </form>
+          <p class="copyright">&#169; Dragan Kovačević</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+  </body>
+</html>

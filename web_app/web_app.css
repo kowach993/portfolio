@@ -1,0 +1,68 @@
+button {
+    padding: 2px;
+    color: white;
+    background-color: teal;
+    border:1px solid white;
+    border-radius: 10px;
+}
+
+input {
+    background-color: teal;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+input:focus {
+    background-color: white;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+
+.container {
+    border: 1px solid white;
+    padding: 8px;
+    background-color: tomato;
+    display: block;
+    width: 200px;
+    margin: 0;
+    border: 1px solid teal;
+    text-align: center;
+    color: white;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_x {
+    margin: 3px;
+    cursor: pointer;
+}
+
+.container-btn {
+    border: 1px solid white;
+    background-color: tomato;
+    display: block;
+    margin: 0;
+    padding: 3px;
+    border: 1px solid teal;
+    text-align: center;
+    color: white;
+}
+
+.date-btn-flex {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.trash {
+    font-size: 23.5px;
+    color: teal;
+}
+
+.addbtn {
+    padding: 5px;
+}

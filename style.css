@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    position: relative;
+    display:block;
+    height: 45px;
+    width: 150px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: #c69c6d;
+    color: white;
+    border: 2px #c69c6d solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+
+footer {
+    background-color: #0e5178;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects_btn {
+    position: relative;
+    top: 50px;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+  }
+
+button:hover {
+    color: #c69c6d;
+    border: 2px white solid;
+  }
+
+button:hover:before {
+    top: 0;
+  }
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    color: #c69c6d;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.edu_year {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.form__button {
+    margin-top: 20px;
+}
+
+.footer_input {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.label__title {
+    color: #c69c6d;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0e5178!important;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #c69c6d;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #c69c6d!important;
+}
+
+.nav-bar {
+    background-color: #c69c6d;
+}
+
+#about_grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#card_link {
+    color: #c69c6d!important;
+}
+
+#nav-hero-container {
+    background-image: url("./images/boat-5889919.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#nav {
+    position: fixed;
+    width: 100vw;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#message {
+    height: 200px;
+}
+
+#hero_text {
+    font-size: 30px;
+    color: white;
+}
+
+#section_one, #section_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section_two {
+    background-color: #c69c6d;
+    width: 100vw;
+    padding: 50px;
+}
+
+#section_one_title {
+    color: #c69c6d;
+    padding-bottom: 50px;
+}
+#section_two_title {
+    color: white;
+    padding-bottom: 50px;
+}
+
+@media all and (max-width:585px) {
+    .card-body {
+        height: 400px!important;
+    }
+
+    .contact__form {
+        width: 80vw;
+    }
+
+    .edu_text {
+        width: 80vw;
+    }
+
+    #about_info {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #about_img {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    #education, #exp, #other, #about_info, #edu_title, #edu_text{
+        width: 80vw;
+    }
+
+    #hero {
+        padding-left: 50px;
+        padding-top: 200px;
+        width: 100%;
+    }
+
+    #hero_title {
+        font-size: 50px;
+        color: #c69c6d;
+    }
+    
+    #hero_text {
+        font-size: 20px;
+        color: white;
+        width: 80vw;
+
+    }
+
+    #section_one {
+        width: 70vw;
+        padding: 40px;
+    }
+}
+
+@media all and (min-width:586px) and (max-width: 975px) {
+    .card-body {
+        height: 600px!important;
+    }
+
+    .contact__form {
+    width: 80vw;
+    }
+    .edu_text {
+        width: 80vw;
+    }
+
+    #about_info {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #about_img {
+        padding-left: 30px;
+    }
+
+    #education, #exp, #other, #about_info, #edu_title, #edu_text{
+        width: 80vw;
+    }
+
+    #hero {
+        padding-left: 50px;
+        padding-top: 200px;
+        width: 100%;
+    }
+
+    #hero_title {
+        font-size: 60px;
+        color: #c69c6d;
+    }
+    
+    #hero_text {
+        font-size: 30px;
+        color: white;
+        width: 80vw;
+
+    }
+
+    #section_one {
+        width: 90vw;
+        padding: 40px;
+    }
+}
+
+@media all and (min-width:976px) {
+    .card-body {
+        height: 350px!important;
+    }
+
+    .contact__form {
+        width: 40vw;
+    }
+
+    .edu_text {
+        width: 400px;
+    }
+
+    #about_info {
+        display: grid;
+        grid-template-columns: 190px 190px;
+    }
+    
+    #about_img {
+        padding-left: 40px;
+    }
+
+    #education, #exp, #other, #about_info, #edu_title, #edu_text{
+        width: 410px;
+    }
+
+    #hero {
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+    
+    #hero_title {
+        font-size: 70px;
+        color: #c69c6d;
+    }
+    
+    #hero_text {
+        font-size: 30px;
+        color: white;
+        width: 80vw;
+
+    }
+
+    #section_one, #section_two {
+        width: fit-content;
+        padding: 50px;
+    }
+}
+
