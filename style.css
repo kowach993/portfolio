@@ -145,6 +145,10 @@ button:hover:before {
     color: #c69c6d!important;
 }
 
+#footer_text {
+    color: #c69c6d;
+}
+
 #nav-hero-container {
     background-image: url("./images/boat-5889919.png");
     background-repeat: no-repeat;
@@ -215,6 +219,11 @@ button:hover:before {
 
     #education, #exp, #other, #about_info, #edu_title, #edu_text{
         width: 80vw;
+    }
+
+    #footer_text {
+        font-size: 30px;
+        font-weight: bold;
     }
 
     #hero {
