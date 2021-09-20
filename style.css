@@ -259,6 +259,10 @@ button:hover:before {
         justify-content: center;
         align-items: center;
     }
+
+    #landing_page_title {
+        align-items: center;
+    }
 }
 
 @media all and (min-width:586px) and (max-width: 975px) {
