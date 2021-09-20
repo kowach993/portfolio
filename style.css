@@ -208,7 +208,7 @@ button:hover:before {
     }
 
     .img_land {
-        height: 80vh;
+        height: 90vh;
     }
 
     #about_info {
@@ -254,7 +254,11 @@ button:hover:before {
     }
 
     #section_3 {
-        padding: 35px;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 
