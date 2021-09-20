@@ -207,6 +207,10 @@ button:hover:before {
         width: 80vw;
     }
 
+    .img_land {
+        height: 80vh;
+    }
+
     #about_info {
         display: grid;
         grid-template-columns: auto auto;
@@ -248,6 +252,10 @@ button:hover:before {
         width: 70vw;
         padding: 40px;
     }
+
+    #section_3 {
+        padding: 35px;
+    }
 }
 
 @media all and (min-width:586px) and (max-width: 975px) {
@@ -260,6 +268,15 @@ button:hover:before {
     }
     .edu_text {
         width: 80vw;
+    }
+
+    .landing_page_container {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .img_land {
+        height: 50vh;
     }
 
     #about_info {
@@ -297,6 +314,23 @@ button:hover:before {
         width: 90vw;
         padding: 40px;
     }
+
+    #section_3 {
+        padding: 50px;
+    }
+
+    #section_3 {
+        height: auto;
+        display: flex;
+        padding: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #landing_page_title {
+        flex-basis: 100%;
+        padding-bottom: 20px;
+    }
 }
 
 @media all and (min-width:976px) {
@@ -310,6 +344,15 @@ button:hover:before {
 
     .edu_text {
         width: 400px;
+    }
+
+    .landing_page_container {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .img_land {
+        height: 80vh;
     }
 
     #about_info {
@@ -342,9 +385,21 @@ button:hover:before {
 
     }
 
+    #landing_page_title {
+        flex-basis: 100%;
+    }
+
     #section_one, #section_two {
         width: fit-content;
         padding: 50px;
+    }
+
+    #section_3 {
+        height: 100vh;
+        display: flex;
+        padding: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
