@@ -261,7 +261,7 @@ button:hover:before {
     }
 
     #landing_page_title {
-        align-items: center;
+        text-align: center;
     }
 }
 
