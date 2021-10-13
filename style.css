@@ -172,13 +172,13 @@ button:hover:before {
     color: white;
 }
 
-#section_one, #section_two {
+#about_me, #projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#section_two {
+#projects {
     background-color: #c69c6d;
     width: 100vw;
     padding: 50px;
@@ -247,7 +247,7 @@ button:hover:before {
 
     }
 
-    #section_one {
+    #about_me {
         width: 70vw;
         padding: 40px;
     }
@@ -317,7 +317,7 @@ button:hover:before {
 
     }
 
-    #section_one {
+    #about_me {
         width: 90vw;
         padding: 40px;
     }
@@ -396,7 +396,7 @@ button:hover:before {
         flex-basis: 100%;
     }
 
-    #section_one, #section_two {
+    #about_me, #projects {
         width: fit-content;
         padding: 50px;
     }
