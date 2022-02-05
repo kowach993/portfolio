@@ -141,6 +141,10 @@ button:hover:before {
     flex-wrap: wrap;
 }
 
+#btn_cont{
+    width: 320px;
+}
+
 #card_link {
     color: #c69c6d!important;
 }
