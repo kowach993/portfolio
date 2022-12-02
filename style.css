@@ -124,7 +124,7 @@ button:hover:before {
 }
 
 .nav-link:hover::after {
-    width: 100%;
+    width: 30%;
 }
 
 .nav-link:hover {
